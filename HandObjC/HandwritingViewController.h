@@ -7,10 +7,12 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
-@interface HandwritingViewController : UIViewController
-
+@interface HandwritingViewController : UIViewController {
+    UIInterfaceOrientation  currentInterfaceOrientation;
+    CGPoint lastPoint;
+}
+@property (nonatomic, strong) UIColor *currentColor;
+@property (nonatomic, strong) IBOutlet UIImageView  *handWrittingImageView;
+- (IBAction)setOrientation: (UIInterfaceOrientation) toInterfaceOrientation;
 @end
-
-NS_ASSUME_NONNULL_END

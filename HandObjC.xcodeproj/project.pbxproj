@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		1105F5202ABFFEA50041C47F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1105F51F2ABFFEA50041C47F /* AppDelegate.m */; };
 		1105F5232ABFFEA60041C47F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1105F5222ABFFEA60041C47F /* SceneDelegate.m */; };
-		1105F5262ABFFEA60041C47F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1105F5252ABFFEA60041C47F /* ViewController.m */; };
-		1105F5292ABFFEA60041C47F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1105F5272ABFFEA60041C47F /* Main.storyboard */; };
 		1105F52B2ABFFEA60041C47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1105F52A2ABFFEA60041C47F /* Assets.xcassets */; };
-		1105F52E2ABFFEA60041C47F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1105F52C2ABFFEA60041C47F /* LaunchScreen.storyboard */; };
 		1105F5312ABFFEA60041C47F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1105F5302ABFFEA60041C47F /* main.m */; };
+		111E958E2AC3376D002CC752 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111E958C2AC3376D002CC752 /* ViewController.m */; };
+		111E95922AC3405A002CC752 /* DrawControllerWithoutNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 111E95912AC3405A002CC752 /* DrawControllerWithoutNib.m */; };
+		111E95962AC344A0002CC752 /* HandwritingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111E95942AC344A0002CC752 /* HandwritingViewController.m */; };
+		111E95972AC344A0002CC752 /* HandwritingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111E95952AC344A0002CC752 /* HandwritingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +23,16 @@
 		1105F51F2ABFFEA50041C47F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1105F5212ABFFEA50041C47F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		1105F5222ABFFEA60041C47F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		1105F5242ABFFEA60041C47F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1105F5252ABFFEA60041C47F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1105F5282ABFFEA60041C47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1105F52A2ABFFEA60041C47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1105F52D2ABFFEA60041C47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1105F52F2ABFFEA60041C47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1105F5302ABFFEA60041C47F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		111E958B2AC3376D002CC752 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		111E958C2AC3376D002CC752 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		111E95902AC3405A002CC752 /* DrawControllerWithoutNib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawControllerWithoutNib.h; sourceTree = "<group>"; };
+		111E95912AC3405A002CC752 /* DrawControllerWithoutNib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawControllerWithoutNib.m; sourceTree = "<group>"; };
+		111E95932AC344A0002CC752 /* HandwritingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandwritingViewController.h; sourceTree = "<group>"; };
+		111E95942AC344A0002CC752 /* HandwritingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandwritingViewController.m; sourceTree = "<group>"; };
+		111E95952AC344A0002CC752 /* HandwritingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HandwritingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +69,14 @@
 				1105F51F2ABFFEA50041C47F /* AppDelegate.m */,
 				1105F5212ABFFEA50041C47F /* SceneDelegate.h */,
 				1105F5222ABFFEA60041C47F /* SceneDelegate.m */,
-				1105F5242ABFFEA60041C47F /* ViewController.h */,
-				1105F5252ABFFEA60041C47F /* ViewController.m */,
-				1105F5272ABFFEA60041C47F /* Main.storyboard */,
+				111E958B2AC3376D002CC752 /* ViewController.h */,
+				111E958C2AC3376D002CC752 /* ViewController.m */,
+				111E95902AC3405A002CC752 /* DrawControllerWithoutNib.h */,
+				111E95912AC3405A002CC752 /* DrawControllerWithoutNib.m */,
+				111E95932AC344A0002CC752 /* HandwritingViewController.h */,
+				111E95942AC344A0002CC752 /* HandwritingViewController.m */,
+				111E95952AC344A0002CC752 /* HandwritingViewController.xib */,
 				1105F52A2ABFFEA60041C47F /* Assets.xcassets */,
-				1105F52C2ABFFEA60041C47F /* LaunchScreen.storyboard */,
 				1105F52F2ABFFEA60041C47F /* Info.plist */,
 				1105F5302ABFFEA60041C47F /* main.m */,
 			);
@@ -133,9 +140,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1105F52E2ABFFEA60041C47F /* LaunchScreen.storyboard in Resources */,
+				111E95972AC344A0002CC752 /* HandwritingViewController.xib in Resources */,
 				1105F52B2ABFFEA60041C47F /* Assets.xcassets in Resources */,
-				1105F5292ABFFEA60041C47F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,33 +152,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1105F5262ABFFEA60041C47F /* ViewController.m in Sources */,
 				1105F5202ABFFEA50041C47F /* AppDelegate.m in Sources */,
 				1105F5312ABFFEA60041C47F /* main.m in Sources */,
+				111E95962AC344A0002CC752 /* HandwritingViewController.m in Sources */,
+				111E958E2AC3376D002CC752 /* ViewController.m in Sources */,
 				1105F5232ABFFEA60041C47F /* SceneDelegate.m in Sources */,
+				111E95922AC3405A002CC752 /* DrawControllerWithoutNib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1105F5272ABFFEA60041C47F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1105F5282ABFFEA60041C47F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1105F52C2ABFFEA60041C47F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1105F52D2ABFFEA60041C47F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1105F5322ABFFEA60041C47F /* Debug */ = {
@@ -303,7 +292,6 @@
 				INFOPLIST_FILE = HandObjC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,7 +318,6 @@
 				INFOPLIST_FILE = HandObjC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

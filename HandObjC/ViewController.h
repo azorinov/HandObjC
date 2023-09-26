@@ -5,12 +5,8 @@
 //  Created by Alexander Zorinov on 2023-09-26.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface ViewController : UIViewController
-
+@interface ViewController : UITableViewController
+@property(strong, nonatomic) NSArray *content;
 @end
-
-NS_ASSUME_NONNULL_END

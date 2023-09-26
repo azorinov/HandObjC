@@ -6,26 +6,54 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
-@end
+#import "DrawControllerWithoutNib.h"
+#import "HandwritingViewController.h"
 
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+  [super viewDidLoad];
+  [self setTitle:@"Options"];
+
+  self.content = @[
+    @"Handwriting with nib", @"Handwriting without nib"
+  ];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+  return 1;
 }
-*/
+
+- (NSInteger)tableView:(UITableView *)tableView
+    numberOfRowsInSection:(NSInteger)section {
+  return [self.content count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+  static NSString *cellIdentifier = @"my-table";
+  UITableViewCell *cell =
+      [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+  if (cell == nil) {
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                  reuseIdentifier:cellIdentifier];
+  }
+
+  cell.textLabel.text = [self.content objectAtIndex:indexPath.row];
+  return cell;
+}
+
+- (void)tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *day = [self.content objectAtIndex:indexPath.row];
+    if ([day isEqualToString:@"Handwriting with nib"]) {
+        [self showViewController:[[HandwritingViewController alloc] init]
+                          sender:self];
+    } else {
+        [self showViewController:[[DrawControllerWithoutNib alloc] initWithText:day]
+                          sender:self];
+    }
+
+}
 
 @end
