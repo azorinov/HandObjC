@@ -20,18 +20,20 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="toA-o3-coz">
-                    <rect key="frame" x="0.0" y="59.333333333333314" width="393" height="733.33333333333348"/>
+                    <rect key="frame" x="-3.6666666666666572" y="126" width="400.33333333333326" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="600" id="aN9-2D-KeL"/>
+                        <constraint firstAttribute="width" constant="400" id="q2f-Dh-a0K"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemOrangeColor"/>
             <constraints>
-                <constraint firstItem="toA-o3-coz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="E76-y0-AaO"/>
-                <constraint firstItem="toA-o3-coz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="W81-7a-nqN"/>
-                <constraint firstItem="toA-o3-coz" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="ftv-ut-O9t"/>
-                <constraint firstItem="toA-o3-coz" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="0.33333333333331439" id="uf1-ag-xT8"/>
+                <constraint firstItem="toA-o3-coz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="12f-eT-n3w"/>
+                <constraint firstItem="toA-o3-coz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="twa-7B-7dk"/>
             </constraints>
             <point key="canvasLocation" x="20.610687022900763" y="19.718309859154932"/>
         </view>

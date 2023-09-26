@@ -62,7 +62,7 @@ float lineWidth = 10.0;
     [self.view addSubview:_handWrittingImageView];
     
     _currentColor = [UIColor colorWithRed:0.250f/0.255f green:0.055f/0.255f blue:0.1f/0.255f alpha:1.000f];
-    _handWrittingImageView.frame = CGRectMake(0, 0, 300, 500);
+    _handWrittingImageView.frame = CGRectMake(0, 0, 400, 400);
 }
 
 - (IBAction)setOrientation:(UIInterfaceOrientation)toInterfaceOrientation
@@ -73,6 +73,5 @@ float lineWidth = 10.0;
 -(UIInterfaceOrientationMask) supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
 }
-
 
 @end
