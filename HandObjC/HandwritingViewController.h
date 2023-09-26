@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HandwritingViewController.h
 //  HandObjC
 //
 //  Created by Alexander Zorinov on 2023-09-26.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ViewController : UIViewController
+@interface HandwritingViewController : UIViewController
 
 @end
 

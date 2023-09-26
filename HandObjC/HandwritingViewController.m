@@ -1,17 +1,17 @@
 //
-//  ViewController.m
+//  HandwritingViewController.m
 //  HandObjC
 //
 //  Created by Alexander Zorinov on 2023-09-26.
 //
 
-#import "ViewController.h"
+#import "HandwritingViewController.h"
 
-@interface ViewController ()
+@interface HandwritingViewController ()
 
 @end
 
-@implementation ViewController
+@implementation HandwritingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
