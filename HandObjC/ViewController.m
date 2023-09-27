@@ -6,8 +6,8 @@
 //
 
 #import "ViewController.h"
-#import "DrawControllerWithoutNib.h"
-#import "HandwritingViewController.h"
+#import "DrawVCWithoutNib.h"
+#import "DrawVCNib.h"
 
 @implementation ViewController
 
@@ -16,7 +16,7 @@
   [self setTitle:@"Options"];
 
   self.content = @[
-    @"Handwriting with nib", @"Handwriting without nib"
+    @"Draw View Controller with nib", @"Draw View Controller without nib"
   ];
 }
 
@@ -46,11 +46,11 @@
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *day = [self.content objectAtIndex:indexPath.row];
-    if ([day isEqualToString:@"Handwriting with nib"]) {
-        [self showViewController:[[HandwritingViewController alloc] init]
+    if ([day isEqualToString:@"Draw View Controller with nib"]) {
+        [self showViewController:[[DrawVCNib alloc] init]
                           sender:self];
     } else {
-        [self showViewController:[[DrawControllerWithoutNib alloc] initWithText:day]
+        [self showViewController:[[DrawVCWithoutNib alloc] init]
                           sender:self];
     }
 
