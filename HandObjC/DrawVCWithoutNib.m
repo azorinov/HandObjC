@@ -1,19 +1,18 @@
 //
-//  HandwritingViewController.m
+//  DetailsController.m
 //  HandObjC
 //
 //  Created by Alexander Zorinov on 2023-09-26.
 //
 
-#import "HandwritingViewController.h"
+#import "DrawVCWithoutNib.h"
 
-@interface HandwritingViewController ()
-
+@interface DrawVCWithoutNib ()
+@property (strong, nonatomic) IBOutlet UIImageView *handWrittingImageView;
+@property (nonatomic, strong) UIColor *currentColor;
 @end
 
-@implementation HandwritingViewController
-
-float lineWidth = 10.0;
+@implementation DrawVCWithoutNib
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
@@ -56,22 +55,24 @@ float lineWidth = 10.0;
     UIGraphicsEndImageContext();
 }
 
+- (void)loadView {
+    [super loadView];
+    lineWidth = 10.0;
+    _currentColor = [UIColor colorWithRed:0.255f/0.255f green:0.180f/0.255f blue:0.190f/0.255f alpha:1.000f];
+    _handWrittingImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 400, 600)];
+    _handWrittingImageView.backgroundColor = [UIColor colorWithRed:0.248f/0.255f green:0.243f/0.255f blue:0.214f/0.255f alpha:1.000f];
+    [self.view addSubview:_handWrittingImageView];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.view addSubview:_handWrittingImageView];
-    
-    _currentColor = [UIColor colorWithRed:0.250f/0.255f green:0.055f/0.255f blue:0.1f/0.255f alpha:1.000f];
-    _handWrittingImageView.frame = CGRectMake(0, 0, 400, 400);
+    [self setTitle:@"Drawing View"];
+    self.view.backgroundColor = [UIColor colorWithRed:0.219f/0.255f green:0.211f/0.255f blue:0.174f/0.255f alpha:1.000f];
 }
 
-- (IBAction)setOrientation:(UIInterfaceOrientation)toInterfaceOrientation
-{
-    currentInterfaceOrientation = toInterfaceOrientation;
-}
-
--(UIInterfaceOrientationMask) supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
+- (void) viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    _handWrittingImageView.center = self.view.center;
 }
 
 @end
